@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Cormba Virus",
+    "version": "1.0.0",
+    "description": "CrombaVirus Extension",
+    "icons":  {
+                "128":  "icon128.png",
+                "64":   "icon64.png",
+                "16":   "icon16.png"
+                },
+    "browser_action":   {
+                            "default_icon": "icon128.png",
+                            "default_popup":    "popup.html"
+                        }            
+        
+      
+}
