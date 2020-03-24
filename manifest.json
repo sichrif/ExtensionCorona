@@ -8,10 +8,18 @@
                 "64":   "icon64.png",
                 "16":   "icon16.png"
                 },
+    "background" : {
+                     "page": "pooo.html"
+                
+                    },
     "browser_action":   {
                             "default_icon": "icon128.png",
-                            "default_popup":    "popup.html"
-                        }            
-        
+                            "default_popup":    "pooo.html"
+                        },
+                        
+                        
+   "permissions": ["notifications","background","alarms"]
+
+  
       
 }
