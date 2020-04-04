@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <script src="scripts.js"></script>
+    <link href="./main.css" rel="stylesheet">
+    <style>
+        body {
+            min-width: 500px;
+            min-height: 500px;
+            background-image: url(bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+ <center><img src="logo.png" width="80px" height="80px"></center>   
+
+    <div class="row">
+        <div class="card-body">
+            <ul class="tabs-animated-shadow nav-justified tabs-animated nav">
+                <li class="nav-item">
+                    <a role="tab" class="nav-link show active" id="tab-c1-0" data-toggle="tab" href="#tab-animated1-0" aria-selected="false">
+                        <span class="text-warning"> cas dans votre état                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a role="tab" class="nav-link show" id="tab-c1-1" data-toggle="tab" href="#tab-animated1-1" aria-selected="false">
+                        <span class="text-warning">cas dans toute la tunisie
+                        </span>
+                    </a>
+                </li>
+              
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane show active " id="tab-animated1-0" role="tabpanel">
+                    <div class="main-card mb-3 card">
+                        <div class="card-body"><h5 class="card-title">choisissez votre état :
+                        </h5>
+                            <form class="">
+                                <select name="form" class="mb-2 form-control" id="form">
+                                    <option id="wileya" value="Manouba">Manouba</option>
+                                    <option id="wileya" value="Bizerte">Bizerte</option>
+                                    <option id="wileya" value="Ariana">Ariana</option>
+                                    <option id="wileya" value="Sidi Bouzid">Sidi Bouzid</option>
+                                    <option id="wileya" value="Kasserine">Kasserine</option>
+                                    <option id="wileya" value="Kef">Kef</option>
+                                    <option id="wileya" value="Gafsa">Gafsa</option>
+                                    <option id="wileya" value="Gabes">Gabes</option>
+                                    <option id="wileya" value="Kebili">Kebili</option>
+                                    <option id="wileya" value="Kairouan">Kairouan</option>
+                                    <option id="wileya" value="Mahdia">Mahdia</option>
+                                    <option id="wileya" value="Monastir">Monastir</option>
+                                    <option id="wileya" value="Sfax">Sfax</option>
+                                    <option id="wileya" value="Sousse">Sousse</option>
+                                    <option id="wileya" value="Tataouine">Tataouine</option>
+                                    <option id="wileya" value="Tunis">Tunis</option>
+                                    <option id="wileya" value="Nabeul">Nabeul</option>
+                                    <option id="wileya" value="Mednine">Mednine</option>
+                                    <option id="wileya" value="Ben Arous">Ben Arous</option>   
+                                </select>
+                           
+                            </form><br>
+                            <button class="mt-1 btn btn-primary" id="click-this">examiner</button><br><br>
+                            <p> nombre de cas dans <span id="nnn"></span> est : <span class="mb-2 mr-2 btn-transition btn btn-outline-danger" id = "cases"></span> </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane show" id="tab-animated1-1" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card mb-3 widget-content">
+                                <div class="widget-content-wrapper">
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">tous les cas</div>
+                                        <br>
+                                        <div class="widget-subheading">cas d'aujourd'hui</div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                         <div class="widget-numbers text-primary" id="p2"><span></span></div>
+                                        <div class="widget-numbers text-secondary" style="font-size: 20px;"><span id="p5"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card mb-3 widget-content bg-midnight-bloom">
+                                <div class="widget-content-wrapper text-white">
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">cas actifs                                        </div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                        <div class="widget-numbers text-warning" id="p3"><span></span></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card mb-3 widget-content bg-grow-early">
+                                <div class="widget-content-wrapper text-white">
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">total récupéré                                        </div>
+                                        <div class="widget-subheading"></div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                        <div class="widget-numbers text-dark" id="p1"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="card mb-3 widget-content bg-premium-dark">
+                                <div class="widget-content-wrapper text-white">
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">tous les décès
+                                        </div>
+                                        <br>
+                                        <div class="widget-subheading">Décès aujourd'hui
+                                        </div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                        <div class="widget-numbers text-danger"  id="p4"><span></span></div>
+                                        <div class="widget-numbers text-danger" id="p6" style="font-size: 20px;"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="app-wrapper-footer">
+    <div class="app-footer">
+        <div class="app-footer__inner">
+            <div class="app-footer-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/JciBizerte/" target="_blank" class="nav-link">
+                            Jci Bizerte
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/sichrife" target="_blank" class="nav-link">
+                            Personal page
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>

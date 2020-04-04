@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Verif-Covid19",
+    "version": "1.1.0",
+    "description": "Verif-Covid19 see every update about the spread of covid19 in tunisia",
+    "icons":  {
+                "128":  "icon128.png",
+                "64":   "icon64.png",
+                "16":   "icon16.png"
+                },
+    "background" : {
+                     "page": "Verif-Covid19.html"
+                
+                    },
+    "browser_action":   {
+                            "default_icon": "icon128.png",
+                            "default_popup":    "Verif-Covid19.html"
+                        },
+                        
+                        
+   "permissions": ["notifications","background","alarms"]
+
+  
+      
+}
